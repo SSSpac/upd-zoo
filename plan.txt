@@ -20,3 +20,8 @@
 - Same sidebar & header &footer.
 - Add crocodile?
 - the read more have a popup.
+
+In this project components were used because they are reusable. The data/animals.js was created to store the animals information and mainly be imported in where its used which is the pages.
+the file also makes it easier to add more animals.
+the handlers should also be passed down to the child component by using props. I decided to use react routing to make navigation easier.
+the MainLayout has a shared used interface, so now theres no need to import components like header and footer on every single page. because the header and nav are now stored thin the layout.
