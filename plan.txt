@@ -1,0 +1,22 @@
+     "start": "react-scripts start",
+
+  Zoo7 project.
+#2c5e1a
+- Src ---
+    Components ----
+        Bird
+        HOME
+        Mammals
+        Reptiles
+    Pages
+    App.js
+    Global.css
+
+
+- Use relevant and consistent colors.
+- Make sure the media queries for mobile are there. @media (max-width: 768px) .
+- Home page .
+- 3 animal pages.
+- Same sidebar & header &footer.
+- Add crocodile?
+- the read more have a popup.

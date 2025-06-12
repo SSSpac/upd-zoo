@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-header {
+  background-color: #2c5e1a;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 1rem;
+}
+
+.main-nav {
+  background-color: #367921;
+  padding: 0.5rem 2rem;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+  background-color: #2c5e1a;
+}
+
+.content-container {
+  flex: 1;
+  padding: 2rem;
+}
+
+.page-container {
+  display: flex;
+  gap: 2rem;
+  min-height: 70vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  margin-bottom: 1rem;
+  color: #2c5e1a;
+  border-bottom: 2px solid #2c5e1a;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #e0e0e0;
+}
+
+.sidebar li.active {
+  background-color: #a3c5a7;
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.welcome-message {
+  text-align: center;
+}
+
+.welcome-message h2 {
+  color: #2c5e1a;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.welcome-message p {
+  margin-bottom: 1rem;
+}
+
+.welcome-message {
+  text-align: center;
+}
+
+.zoo-logo {
+  width: 300px;
+}
+
+.welcome-message h2 {
+  color: #2c5e1a;
+  margin-bottom: 1rem;
+}
+
+.welcome-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.welcome-message p {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.group-info {
+  text-align: center;
+}
+
+.group-info h2 {
+  color: #2c5e1a;
+  margin-bottom: 1rem;
+}
+
+.group-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.group-info p {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.animal-summary {
+  margin-bottom: 1.5rem;
+}
+
+.animal-summary h2 {
+  color: #2c5e1a;
+  margin-bottom: 1rem;
+}
+
+.summary-content {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.animal-thumbnail {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.summary-text {
+  flex: 1;
+}
+
+.summary-text p {
+  margin-bottom: 0.5rem;
+}
+
+.group-link {
+  color: #367921;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.group-link:hover {
+  text-decoration: underline;
+}
+
+.full-summary {
+  margin-bottom: 1.5rem;
+}
+
+.full-summary h2 {
+  color: #2c5e1a;
+  margin-bottom: 1rem;
+}
+
+.full-summary-content {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.animal-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.full-summary-text {
+  flex: 1;
+}
+
+.full-summary-text p {
+  margin-bottom: 0.5rem;
+}
+
+.read-more-btn {
+  background-color: #367921;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #2c5e1a;
+}
+
+.animal-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.animal-details {
+  background-color: white;
+  width: 80%;
+  max-width: 900px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 8px;
+  padding: 2rem;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.details-content {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.details-info {
+  flex: 1;
+}
+
+.details-info p {
+  margin-bottom: 1rem;
+}
+
+.site-footer {
+  background-color: #2c5e1a;
+  color: white;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+
+  .main-nav a {
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  .page-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .Logo {
+    width: 50px;;
+  }
+
+  .main-content {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .summary-content,
+  .full-summary-content,
+  .details-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .animal-thumbnail {
+    width: 100%;
+    height: 200px;
+  }
+
+  .animal-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .animal-details {
+    width: 95%;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .zoo-logo {
+    width: 200px;
+  }
+
+
+  .details-content {
+    padding: 0.5rem;
+  }
+
+  .site-header {
+    padding: 0.8rem 1rem;
+  }
+
+  .logo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo img {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
